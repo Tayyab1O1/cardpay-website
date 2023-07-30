@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 
-const navBar = ({navColor}) => {
+const navBar = ({ navColor }) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
@@ -27,17 +27,20 @@ const navBar = ({navColor}) => {
     const [sticky, setSticky] = useState(false);
     const [navBgColor, setNavBgColor] = useState(navColor);
     const [shadow, setShadow] = useState('shadow-sm');
+    const [padding,setPadding] = useState(4);
 
     const handleStickyNavbar = () => {
         if (window.scrollY >= 80) {
             setSticky(true);
             setNavBgColor('white');
-            setShadow('shadow-md')
+            setShadow('shadow-md');
+            setPadding('p-4');
         } else {
             setSticky(false);
             setNavBgColor(navColor);
             console.log(navColor);
             setShadow('shadow-sm');
+            setPadding(6);
         }
     };
 
@@ -51,7 +54,7 @@ const navBar = ({navColor}) => {
 
     return (
         <div className={`sticky top-0 z-50 bg-${navBgColor}`}>
-            <div className={`navbar ${shadow} px-2 text-black`}>
+            <div className={`navbar ${shadow} px-2 text-black lg:hidden`}>
                 <div className="grid grid-cols-3 items-center">
                     <img src='./assets/logo.svg' style={{ maxWidth: '35%', height: 'auto' }} ></img>
                     <div onClick={dashboard} className="text-2xl items-center font-bold text-blue-800 mx-auto p-2 ">
@@ -73,6 +76,20 @@ const navBar = ({navColor}) => {
                     </div>
                 </div>
             </div>
+
+            {/* Large Screen Size */}
+            <div className={`navbar ${shadow} ${padding}  justify-center text-black hidden lg:flex lg:flex-row`}>
+                <img src='./assets/logo.svg' className="h-8"></img>
+                <div onClick={dashboard} className="text-2xl  mr-16 items-center font-medium text-blue-800 p-2 ">
+                    <a>CardPay</a>
+                </div>
+                <div className="space-x-8">
+                    <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-serif">About us ➡️</a></button>
+                    <button className="btn btn-ghost font-normal " onClick={redirectToOurTeam}><a className="text-base font-serif">Meet our Team ➡️</a></button>
+                    <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-serif">Signing up ➡️</a></button>
+                </div>
+            </div>
+
         </div>
     )
 

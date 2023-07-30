@@ -16,7 +16,7 @@ function MyCarousel() {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            const Index = activeImage+1;
+            const Index = activeImage + 1;
             setActiveImage(Index);
         }, 2000);
 
@@ -29,12 +29,22 @@ function MyCarousel() {
     const imageElement = (index) => {
         return (
             <div className='w-1/3 h-auto bg-white'>
-                <img
-                    src={images[(activeImage + index) % 8]}
-                    alt={`Image ${activeImage + 1}`}
-                    style={{ maxWidth: '65px', maxHeight: '65px', width: 'auto', height: 'auto' }}
-                    className='w-full h-full object-cover'
-                />
+                <div className='lg:hidden'>
+                    <img
+                        src={images[(activeImage + index) % 8]}
+                        alt={`Image ${activeImage + 1}`}
+                        style={{ maxWidth: '65px', maxHeight: '65px', width: 'auto', height: 'auto' }}
+                        className='w-full h-full object-cover'
+                    />
+                </div>
+                <div className='lg:flex hidden'>
+                    <img
+                        src={images[(activeImage + index) % 8]}
+                        alt={`Image ${activeImage + 1}`}
+                        style={{ maxWidth: '50%', height: 'auto' }}
+                        className='w-full h-full object-cover'
+                    />
+                </div>
             </div>
 
 
@@ -42,9 +52,9 @@ function MyCarousel() {
     }
 
     return (
-        <div className='mt-6'>
-            <h1 className='text-blue-500 font-semibold text-3xl mb-4 text-left px-6'>Our Partners</h1>
-                <div className='flex flex-row pl-6 '>
+        <div className='mt-6 lg:mt-20 lg:mb-20 lg:px-44'>
+            <h1 className='text-blue-500 font-semibold text-3xl lg:text-6xl mb-4 text-left px-6'>Our Partners</h1>
+            <div className='flex flex-row pl-6 lg:ml-36 lg:pl-0 lg:mt-8 '>
                 {imageElement(0)}
                 {imageElement(1)}
                 {imageElement(2)}

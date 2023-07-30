@@ -2,11 +2,11 @@ function ourBeacon() {
 
     return (
         <div>
-            <h1 className="text-blue-900 mt-8 text-2xl font-semibold">Our Guiding Beacons</h1>
-            <div className="flex flex-col px-4 space-y-4 mt-4">
+            <h1 className="text-blue-900 mt-8 text-2xl lg:mt-16 lg:text-5xl lg:text-left lg:px-32 font-semibold">Our Guiding Beacons</h1>
+            <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:space-x-14 px-4 gap-6  mt-4">
 
                 {/* integrity */}
-                <div className="card bg-lightBlue text-black shadow-xl items-center py-4">
+                <div className="lg:w-1/4 card bg-lightBlue text-black shadow-xl items-center py-4">
                     <img src="./assets/icons/integrity.png" style={{maxWidth:"40%", height:'auto'}} className="px-6" alt="integrity" />
                     <div className="card-body py-2 items-center">
                         <h2 className="card-title font-medium">Integrity</h2>
@@ -15,7 +15,7 @@ function ourBeacon() {
                 </div>
 
                 {/* Trust */}
-                <div className="card bg-lightBlue text-black shadow-xl items-center py-4">
+                <div className="lg:w-1/4 card bg-lightBlue text-black shadow-xl items-center py-4">
                     <img src="./assets/icons/trust.png" style={{maxWidth:"40%", height:'auto'}} className="px-6" alt="Trust" />
                     <div className="card-body py-2 items-center">
                         <h2 className="card-title font-medium">Trust</h2>
@@ -24,7 +24,7 @@ function ourBeacon() {
                 </div>
 
                 {/* Honesty */}
-                <div className="card bg-lightBlue text-black shadow-xl items-center py-4">
+                <div className="lg:w-1/4 card bg-lightBlue text-black shadow-xl items-center py-4">
                     <img src="./assets/icons/honesty.png" style={{maxWidth:"40%", height:'auto'}} className="px-6" alt="Honesty" />
                     <div className="card-body py-2 items-center">
                         <h2 className="card-title font-medium">Honesty</h2>
@@ -33,7 +33,7 @@ function ourBeacon() {
                 </div>
 
                 {/* Fairness */}
-                <div className="card bg-lightBlue text-black shadow-xl items-center py-4">
+                <div className="lg:w-1/4 card bg-lightBlue text-black shadow-xl items-center py-4">
                     <img src="./assets/icons/fairness.png" style={{maxWidth:"40%", height:'auto'}} className="px-6" alt="Fairness" />
                     <div className="card-body py-2 items-center">
                         <h2 className="card-title font-medium">Fairness</h2>
@@ -42,7 +42,7 @@ function ourBeacon() {
                 </div>
 
                   {/* Respect */}
-                  <div className="card bg-lightBlue text-black shadow-xl items-center py-4">
+                  <div className="lg:w-1/4 card bg-lightBlue text-black shadow-xl items-center py-4">
                     <img src="./assets/icons/respect.png" style={{maxWidth:"40%", height:'auto'}} className="px-6" alt="Respect" />
                     <div className="card-body py-2 items-center">
                         <h2 className="card-title font-medium">Respect</h2>

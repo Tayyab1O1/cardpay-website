@@ -55,22 +55,22 @@ function Traction() {
 
 
     return (
-        <div className="p-4">
-            <h1 className="text-green-500 font-semibold text-3xl mb-4 text-left px-2">Our Traction</h1>
-            <div id="traction" ref={elementRef} className="stats stats-vertical  bg-white lg:stats-horizontal shadow">
+        <div className="p-4 lg:mt-16 lg:px-48">
+            <h1 className="text-green-500 font-semibold text-3xl mb-4 text-left lg:text-6xl px-2 lg:mb-8">Our Traction</h1>
+            <div id="traction" ref={elementRef} className="stats stats-vertical lg:grid lg:grid-cols-3 lg:py-6 lg:shadow-lg  bg-white lg:stats-horizontal shadow">
                 <div className="stat">
-                    <div className="stat-value text-purple-700">{100 * counter}+</div>
-                    <div className="stat-desc text-black text-base">users</div>
+                    <div className="stat-value lg:text-6xl text-purple-700">{100 * counter}+</div>
+                    <div className="stat-desc lg:text-3xl lg:text-gray-600 text-black text-base">users</div>
                 </div>
 
                 <div className="stat">
-                    <div className="stat-value text-blue-700">{(0.125 * counter).toFixed(2)}M</div>
-                    <div className="stat-desc text-black text-base">Deposits</div>
+                    <div className="stat-value lg:text-6xl text-blue-700">{(0.125 * counter).toFixed(2)}M</div>
+                    <div className="stat-desc lg:text-3xl lg:text-gray-600 text-black text-base">Deposits</div>
                 </div>
 
                 <div className="stat">
-                    <div className="stat-value text-green-700">{counter}</div>
-                    <div className="stat-desc text-black text-base">Vendors</div>
+                    <div className="stat-value lg:text-6xl  text-green-700">{counter}</div>
+                    <div className="stat-desc lg:text-3xl lg:text-gray-600 text-black text-base">Vendors</div>
                 </div>
 
             </div>

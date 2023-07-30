@@ -7,7 +7,7 @@ function Layout({ children, color}) {
     <div>
       <div className="bg-white min-h-screen flex flex-col">
         <NavBar  navColor={color}/>
-        <div className=" mx-auto flex flex-col justify-center text-center">
+        <div className=" mx-auto flex flex-col w-screen justify-center text-center">
           {children}
         </div>
         <Footer />

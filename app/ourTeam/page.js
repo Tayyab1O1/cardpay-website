@@ -6,7 +6,7 @@ import TeamCarousel from "../Components/ourTeam/teamCarousel";
 
 function ourTeam(){
     return(
-        <Layout color={"lightBlue"}>
+        <Layout color={"lightGreen"}>
             <Banner />
             <Intro />
             <OurBeacon />

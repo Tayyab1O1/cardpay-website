@@ -24,6 +24,24 @@ function TeamCarousel() {
         'Vaneeza Liaqat',
     ]
 
+    const reviews = [
+        'CardPay nurtures my frontend growth with support and excellence. Valuable professional development makes my work enjoyable,easier and enriches skills.',
+
+        'As a backend developer, CardPay drives my growth with support and excellence. Rewarding journey with great professional development opportunities.',
+
+        'Thriving in Marketing at CardPay! Creative collaboration expands skills, achieving fulfilling and exciting marketing goals in a dynamic environment.',
+
+        'CardPays backend focus fuels growth. Gratifying journey with valuable career advancement and supportive team seems like the perfect fir for myself.',
+
+        'CardPays backend role fulfills me. Support and dedication enhance skills and open exciting opportunities for growth.It is perfect for my stage of life.',
+
+        'CardPays incredible journey! Sales-driven journey and lessons yields exceptional results, fostering professional growth in a positive work atmosphere.',
+
+        'CardPay transformed my Marketing career. Motivation and customer-centricity fuel rewarding experiences, making a real impact together on Pakistan',
+
+        'CardPays dream Marketing role! Creative projects inspire,resonating campaigns, and customer results has helped me learn more than I ever imagined.'
+    ]
+
     useEffect(() => {
         const timer = setInterval(() => {
             const Index = activeImage + 1;
@@ -38,7 +56,7 @@ function TeamCarousel() {
 
     const imageElement = () => {
         return (
-            <div className='w-full h-auto bg-base-100 flex flex-row'>
+            <div className='w-full lg:w-1/4 h-auto bg-base-100 flex flex-row'>
                 <img
                     src={images[(activeImage) % images.length]}
                     alt={`Image ${activeImage + 1}`}
@@ -47,6 +65,18 @@ function TeamCarousel() {
             </div>
 
 
+        )
+    }
+    const reviewElement = () => {
+        return (
+            <div className='w-1/3 lg:flex hidden h-auto'>
+                <div className="px-4 card bg-blue-950 text-primary-content">
+                    <div className="card-body">
+                        <h2 className="card-title text-3xl">~{names[(activeImage) % images.length]}</h2>
+                        <p className='text-xl text-left leading-10'>{reviews[(activeImage) % images.length]}</p>
+                    </div>
+                </div>
+            </div>
         )
     }
 
@@ -63,14 +93,15 @@ function TeamCarousel() {
 
     return (
         <div>
-            <h1 className='text-2xl text-gray-700 text-left font-semibold mb-2 px-4 mt-8'>Our Visionaries</h1>
+            <h1 className='text-2xl text-gray-800 text-left font-semibold mb-2 px-4 lg:px-32 lg:text-5xl lg:mb-8 lg:mt-16 mt-8'>Our Visionaries</h1>
             <div className="card w-screen bg-base-100 rounded-none shadow-xl">
-                <figure className="px-1 pt-16 space-x-1">
+                <figure className="px-1 pt-16 lg:pb-16 lg:space-x-8 space-x-1 ">
                     <a onClick={decreaseActiveImage} className="btn btn-circle">❮</a>
                     {imageElement()}
+                    {reviewElement()}
                     <a onClick={increaseActiveImage} className="btn btn-circle">❯</a>
                 </figure>
-                <div className="card-body items-center text-center">
+                <div className="card-body items-center text-center lg:hidden">
                     <h2 className="card-title text-3xl font-serif">{names[(activeImage) % images.length]}</h2>
                 </div>
             </div>
