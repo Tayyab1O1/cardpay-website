@@ -19,6 +19,9 @@ module.exports = {
         visionColor: "#19395C",
         lightGreen: "#e8f4ea"
       },
+      fontFamily: {
+        'nunito': ['nunito'],
+      }
     },
   },
   plugins: [require("daisyui")],

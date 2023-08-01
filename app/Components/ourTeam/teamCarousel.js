@@ -93,7 +93,7 @@ function TeamCarousel() {
 
     return (
         <div>
-            <h1 className='text-2xl text-gray-800 text-left font-semibold mb-2 px-4 lg:px-32 lg:text-5xl lg:mb-8 lg:mt-16 mt-8'>Our Visionaries</h1>
+            <h1 className='text-3xl text-gray-800 text-left font-semibold mb-2 px-4 lg:px-32 lg:text-5xl lg:mb-8 lg:mt-16 mt-8'>Our Visionaries</h1>
             <div className="card w-screen bg-base-100 rounded-none shadow-xl">
                 <figure className="px-1 pt-16 lg:pb-16 lg:space-x-8 space-x-1 ">
                     <a onClick={decreaseActiveImage} className="btn btn-circle">❮</a>

@@ -22,11 +22,11 @@ function Banner() {
                 <img src={images[5]} className="rounded-2xl shadow-md border-2 border-gray-100 hidden lg:inline lg:w-1/4" />
             </div>
             <div className="lg:mb-16">
-                <h1 className="text-black font-semibold text-xl lg:text-5xl mb-2">CardPay</h1>
+                <h1 className="text-black font-semibold text-3xl lg:text-5xl mb-2">CardPay</h1>
                 <h2 className="text-gray-700 font-medium lg:text-2xl lg:inline hidden">Solving the unsolved Problems</h2>
 
             </div>
-            <h2 className="text-gray-700 font-medium lg:text-xl lg:hidden">Solving the unsolved Problems</h2>
+            <h2 className="text-gray-700 font-medium text-lg lg:hidden">Solving the unsolved Problems</h2>
         </div>
     )
 

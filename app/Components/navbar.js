@@ -66,11 +66,9 @@ const navBar = ({ navColor }) => {
                         </label>
                         {isOpen && (
                             <ul tabIndex={0} className="text-black dropdown-content z-[1] menu p-2 shadow-sm bg-white w-max rounded-md mt-2 ">
-                                <li onClick={redirectToAboutUs}><a>About us</a></li>
+                                <li onClick={redirectToAboutUs}><a className="text-lg">About us</a></li>
                                 <hr />
-                                <li onClick={redirectToOurTeam}><a>Meet our Team</a></li>
-                                <hr />
-                                <li><a>Signing up</a></li>
+                                <li onClick={redirectToOurTeam}><a className="text-lg">Meet our Team</a></li>
                             </ul>
                         )}
                     </div>
@@ -84,9 +82,9 @@ const navBar = ({ navColor }) => {
                     <a>CardPay</a>
                 </div>
                 <div className="space-x-8">
-                    <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-serif">About us ➡️</a></button>
-                    <button className="btn btn-ghost font-normal " onClick={redirectToOurTeam}><a className="text-base font-serif">Meet our Team ➡️</a></button>
-                    <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-serif">Signing up ➡️</a></button>
+                    <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-nunito">About us ➡️</a></button>
+                    <button className="btn btn-ghost font-normal " onClick={redirectToOurTeam}><a className="text-base font-nunito">Meet our Team ➡️</a></button>
+                    {/* <button className="btn btn-ghost font-normal " onClick={redirectToAboutUs}><a className="text-base font-serif">Signing up ➡️</a></button> */}
                 </div>
             </div>
 

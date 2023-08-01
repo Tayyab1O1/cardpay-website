@@ -25,17 +25,25 @@ function MyCarousel() {
         };
     }, [images]);
 
+    const largeScreen = (index) => {
+        if (index === 3 ) {
+            console.log("whaat");
+            return false;
+        }
+        return true;
+    }
+
 
     const imageElement = (index) => {
         return (
-            <div className='w-1/3 h-auto bg-white'>
+            <div className=' lg:w-1/4 h-auto bg-white'>
                 <div className='lg:hidden'>
-                    <img
+                    {largeScreen(index) && <img
                         src={images[(activeImage + index) % 8]}
                         alt={`Image ${activeImage + 1}`}
-                        style={{ maxWidth: '65px', maxHeight: '65px', width: 'auto', height: 'auto' }}
-                        className='w-full h-full object-cover'
-                    />
+                        // style={{ maxWidth: '250%', maxHeight: '250%', width: 'auto', height: 'auto' }}
+                        className='scale-150 '
+                    />}
                 </div>
                 <div className='lg:flex hidden'>
                     <img
@@ -53,11 +61,12 @@ function MyCarousel() {
 
     return (
         <div className='mt-6 lg:mt-20 lg:mb-20 lg:px-44'>
-            <h1 className='text-blue-500 font-semibold text-3xl lg:text-6xl mb-4 text-left px-6'>Our Partners</h1>
-            <div className='flex flex-row pl-6 lg:ml-36 lg:pl-0 lg:mt-8 '>
+            <h1 className='text-blue-500 font-semibold text-3xl lg:text-5xl mb-6 text-left px-6'>Our Partners</h1>
+            <div className='flex flex-row justify-evenly lg:ml-36 lg:pl-0 lg:mt-8 '>
                 {imageElement(0)}
                 {imageElement(1)}
                 {imageElement(2)}
+                {imageElement(3)}
             </div>
         </div>
     )
