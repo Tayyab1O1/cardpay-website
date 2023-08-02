@@ -58,7 +58,7 @@ function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-base text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" className="hover:underline">CardPay™</a>. All Rights Reserved.
                     </span>
-                    <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                    <div className="flex mt-4 space-x-5 justify-evenly sm:mt-0">
                         <a href="https://www.facebook.com/profile.php?id=100088320163028" className="text-blue-900 hover:text-gray-900 ">
                             <svg className="w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                                 <path  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" />

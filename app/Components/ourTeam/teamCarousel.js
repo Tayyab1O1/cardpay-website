@@ -56,7 +56,7 @@ function TeamCarousel() {
 
     const imageElement = () => {
         return (
-            <div className='w-full lg:w-1/4 h-auto bg-base-100 flex flex-row'>
+            <div className='w-full lg:w-1/4 h-auto bg-base-100 flex rounded-2xl flex-row'>
                 <img
                     src={images[(activeImage) % images.length]}
                     alt={`Image ${activeImage + 1}`}
@@ -70,7 +70,7 @@ function TeamCarousel() {
     const reviewElement = () => {
         return (
             <div className='w-1/3 lg:flex hidden h-auto'>
-                <div className="px-4 card bg-blue-950 text-primary-content">
+                <div className="px-4 card bg-blue-950 shadow-lg text-primary-content">
                     <div className="card-body">
                         <h2 className="card-title text-3xl">~{names[(activeImage) % images.length]}</h2>
                         <p className='text-xl text-left leading-10'>{reviews[(activeImage) % images.length]}</p>
@@ -94,7 +94,7 @@ function TeamCarousel() {
     return (
         <div>
             <h1 className='text-3xl text-gray-800 text-left font-semibold mb-2 px-4 lg:px-32 lg:text-5xl lg:mb-8 lg:mt-16 mt-8'>Our Visionaries</h1>
-            <div className="card w-screen bg-base-100 rounded-none shadow-xl">
+            <div className="card w-screen bg-visionColor rounded-none shadow-xl">
                 <figure className="px-1 pt-16 lg:pb-16 lg:space-x-8 space-x-1 ">
                     <a onClick={decreaseActiveImage} className="btn btn-circle">❮</a>
                     {imageElement()}

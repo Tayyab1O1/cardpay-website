@@ -9,7 +9,7 @@ function Features() {
                     <div className="card w-full bg-inherit shadow-md rounded-sm">
                         <div className="card-body text-black p-2">
                             <div className="flex flex-row">
-                                <h2 className="card-title text-2xl w-full ">Pay at vendors</h2>
+                                <h2 className="card-title text-2xl w-full ">Pay Anywhere, any time</h2>
                                 <img src="./assets/flyingArrow.png" style={{ maxWidth: '35%', height: 'auto', marginTop: '-30px' }} />
                             </div>
                             <p className="text-base text-left text-gray-700">
@@ -101,7 +101,7 @@ function Features() {
                     <div className="min-h-screen">
                         <div className="flex flex-row mb-12">
                             <h1 className="text-black text-6xl font-semibold mr-2">
-                                Pay at vendors
+                                Pay Anywhere, any time
                             </h1>
                             <img src="./assets/flyingArrow.png" style={{ maxWidth: '30%', height: 'auto', marginTop: '-100px' }} />
                         </div>
@@ -111,11 +111,11 @@ function Features() {
                         <div className="grid grid-cols-2">
                             <div className="justify-start flex flex-col">
 
-                                <figure>
+                                <figure >
                                     <img src="./assets/features_lg/events.png" alt="events" style={{ maxWidth: "70%", height: "auto" }} />
                                 </figure>
                                 <h3 className=" text-black text-2xl w-max pr-8 mt-4 font-medium ">Event Registerations</h3>
-                                <p className="text-left text-xl text-black pr-24 mt-2 leading-8">
+                                <p className="text-left text-xl text-black pr-40 mt-2 leading-8">
                                     Streamline your life with CardPay! No more juggling multiple channels for registrations and payments.
                                     We've got you covered with a seamless process in one place!
                                 </p>
@@ -124,7 +124,7 @@ function Features() {
                                     <img src="./assets/features_lg/delivery.png" alt="events" style={{ maxWidth: "70%", height: "auto" }} />
                                 </figure>
                                 <h3 className=" text-black text-2xl w-max pr-8 mt-4 font-medium ">Pre Order Food</h3>
-                                <p className="text-left text-xl text-black pr-24 mt-2 leading-8">
+                                <p className="text-left text-xl text-black pr-40 mt-2 leading-8">
                                     Proving an all in one solution to your delivery headaches.
                                 </p>
 
@@ -140,7 +140,7 @@ function Features() {
                                     Pay conveniently at your favorite places with multiple payment options like QR codes and cards.
                                     No worries, just smooth transactions!
                                 </h2>
-                                <button className="btn btn-md w-32 mt-8 bg-white border-none text-black shadow-lg shadow-violet-300">Learn More</button>
+                                <button className="btn btn-md w-32 mt-8 bg-white hover:bg-purple-600 hover:text-white border-none text-black shadow-lg shadow-violet-300">Learn More</button>
 
                                 <figure className="mt-24">
                                     <img src="./assets/features_lg/school.png" alt="events" style={{ maxWidth: "100%", height: "auto" }} />

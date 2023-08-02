@@ -15,9 +15,9 @@ module.exports = {
       colors: {
         lightBlue: "#eff7fa",
         missionColor: "#5F4D69",
-        lightPurple: "#faefff",
+        lightPurple: "#f4f1ff",
         visionColor: "#19395C",
-        lightGreen: "#e8f4ea"
+        lightGreen: "#f7fff6"
       },
       fontFamily: {
         'nunito': ['nunito'],
